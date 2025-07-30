@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Profile | Fresher Level</title>
+    <style>
+        :root {
+            --primary: #3a86ff;
+            --secondary: #8338ec;
+            --dark: #212529;
+            --light: #f8f9fa;
+            --accent: #ff006e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+       
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        .about-text p {
+            margin-bottom: 1rem;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .skill {
+            background: var(--light);
+            border-radius: 20px;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .skill:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .skill-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--dark);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .skills-container {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bhakti Rasal</h1>
+            <p class="tagline">Computer Science Student & Fresher Developer</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm  computer science student with strong foundation in programming fundamentals. I enjoy solving problems and building small projects to practice my coding skills.</p>
+                    <p>Currently learning web development (HTML, CSS, JavaScript,bootstrap) along with Java and C programming. I'm passionate about creating clean, efficient code and always eager to learn new technologies.</p>
+                    <p>Doing  internship  with Samanyastra and grow as a developer.</p>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3dc94093-a898-4259-ae00-4929b383f81b.png" alt="HTML5 logo icon in orange" class="skill-icon">
+                    <div>
+                        <h3>HTML</h3>
+                        <p>Basic structure, forms, semantic elements</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2f7e595c-ad3f-495d-85fb-1b5ca05b9222.png" alt="CSS3 logo icon in blue" class="skill-icon">
+                    <div>
+                        <h3>CSS</h3>
+                        <p>Styling, layouts, responsive basics</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1ae3e92d-ba45-4247-95c3-d5aa69b53212.png" alt="JavaScript logo icon in yellow" class="skill-icon">
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>Variables, functions, DOM basics</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/43c7af2a-70b5-4e6d-8cfe-38100520e5c0.png" alt="C programming language logo icon in dark blue" class="skill-icon">
+                    <div>
+                        <h3>C</h3>
+                        <p>Basic syntax, data structures, simple programs</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/60d9f06f-d2e5-47b0-94e2-3822e56767ff.png" alt="Java logo icon in red" class="skill-icon">
+                    <div>
+                        <h3>Java</h3>
+                        <p>Core Java, OOP principles</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="container">
+        <p>All about Me</p>
+    </footer>
+</body>
+</html>
